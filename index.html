@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MilliniumMC Server Host</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to MilliniumMC Server Host</h1>
-        <nav>
-            <ul>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#servers">Server Management</a></li>
-                <li><a href="#settings">Settings</a></li>
-                <li><a href="#plugins">Plugin Installation</a></li>
-            </ul>
-        </nav>
+        <h1>Server Dashboard</h1>
     </header>
     <main>
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <p>Your overview of server status and analytics.</p>
+        <section id="server-status">
+            <h2>Server Status</h2>
+            <div id="status-display">
+                <p>Server is running...</p>
+                <!-- Additional status display could go here -->
+            </div>
         </section>
-        <section id="servers">
-            <h2>Server Management</h2>
-            <p>Manage your servers efficiently.</p>
+        <section id="controls">
+            <h2>Controls</h2>
+            <button onclick="startServer()">Start Server</button>
+            <button onclick="stopServer()">Stop Server</button>
+            <!-- More controls can be added here -->
         </section>
-        <section id="settings">
-            <h2>Settings</h2>
-            <p>Configure your server settings here.</p>
-        </section>
-        <section id="plugins">
-            <h2>Plugin Installation</h2>
-            <p>Install and manage server plugins.</p>
+        <section id="info-display">
+            <h2>Information Display</h2>
+            <p>Welcome to the main dashboard. You can view the server status and control it from here.</p>
+            <!-- Additional information could be added here -->
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 MilliniumMC. All rights reserved.</p>
+        <p>&copy; 2026 Mahesh V9214.</p>
     </footer>
+    <script>
+        function startServer() {
+            // code to start server
+            alert('Server starting...');
+        }
+        function stopServer() {
+            // code to stop server
+            alert('Server stopping...');
+        }
+    </script>
 </body>
 </html>
